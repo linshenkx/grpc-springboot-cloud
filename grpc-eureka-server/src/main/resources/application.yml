@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: grpc-eureka-server
+  profiles:
+    active: ${grpc-eureka-profile:slave1}
+# actuator management
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# actuator info
+info:
+  app:
+    encoding:UTF-8
+    java.source:1.8
+    java.traget:1.8

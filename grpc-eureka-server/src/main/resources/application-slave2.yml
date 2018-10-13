@@ -1,0 +1,10 @@
+server:
+  port: 8782
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${cloudServerSlave1:localhost}:8781/eureka/
+  instance:
+    hostname: ${cloudServerSlave2:localhost}
+  server:
+    enable-self-preservation: false
