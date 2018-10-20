@@ -7,7 +7,6 @@
     <packaging>jar</packaging>
 
     <name>grpc-eureka-server</name>
-    <description>Demo project for Spring Boot</description>
 
     <parent>
         <artifactId>grpc-springboot-cloud</artifactId>
@@ -39,6 +38,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

@@ -1,6 +1,5 @@
 package com.linshen.grpcspringcloudconsumer;
 
-
 import com.linshen.grpc.cloud.lib.GreeterGrpc;
 import com.linshen.grpc.cloud.lib.GreeterOuterClass;
 import io.grpc.Channel;
