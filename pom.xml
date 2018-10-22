@@ -29,6 +29,12 @@
         <spring-boot.version>${project.parent.version}</spring-boot.version>
         <net-devh-grpc.version>2.0.1.RELEASE</net-devh-grpc.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
+
+        <sonar.login>9129bbeb9b95ea497d14761ffaf55d19a2d63ce3</sonar.login>
+        <sonar.password></sonar.password>
+        <sonar.host.url>
+            http://120.79.168.114:9000
+        </sonar.host.url>
     </properties>
 
     <dependencyManagement>
@@ -70,4 +76,16 @@
             <url>https://repo.rdc.aliyun.com/repository/33942-snapshot-LEgirb/</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.5.0.1254</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

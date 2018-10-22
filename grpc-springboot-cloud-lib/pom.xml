@@ -17,6 +17,9 @@
         <grpc.version>1.15.1</grpc.version>
         <protoc.version>3.6.1</protoc.version>
         <protobuf.plugin.version>0.6.1</protobuf.plugin.version>
+        <sonar.exclusions>
+            **/com/linshen/grpc/cloud/lib/*
+        </sonar.exclusions>
     </properties>
 
     <dependencies>
